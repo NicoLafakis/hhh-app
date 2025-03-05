@@ -1,0 +1,3520 @@
+[
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "UI components overview (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Standard components"
+      },
+      {
+        "tag": "h2",
+        "content": "CRM data components"
+      },
+      {
+        "tag": "h2",
+        "content": "CRM action components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "When building a UI extension, you can include any number of HubSpot-provided reusable components. These components range from simple text fields to out-of-the-box CRM object reports, and each component offers customization options through properties."
+      },
+      {
+        "tag": "p",
+        "content": "Please note: to access the latest components, ensure that you've installed the latest npm package by running npm i @hubspot/ui-extensions in the extensions directory."
+      },
+      {
+        "tag": "p",
+        "content": "Components are imported at the top of your tsx or jsx extension file. Depending on the type of component, you'll need to import them from one of two SDK directories."
+      },
+      {
+        "tag": "p",
+        "content": "For a visual library of these UI components, check out HubSpot's Figma Design Kit."
+      },
+      {
+        "tag": "p",
+        "content": "Standard components are components that can be used for both internal and external data. These components do not fetch data on their own, but are more flexible in their implementation."
+      },
+      {
+        "tag": "p",
+        "content": "These components are imported from '@hubspot/ui-extensions'."
+      },
+      {
+        "tag": "p",
+        "content": "CRM data components can pull data directly from the currently displaying CRM record, including information about associated records and single object reports. These components can only be placed in the middle column of CRM records. Learn more about CRM data components."
+      },
+      {
+        "tag": "p",
+        "content": "These components are imported from @hubspot/ui-extensions/crm."
+      },
+      {
+        "tag": "p",
+        "content": "CRM action components provide a built-in set of CRM-related actions, including adding notes to records, opening a one-to-one email composition window, creating new records, and more. Each component can perform the same set of actions, so which component to choose will depend on your needs and preferences. Learn more about CRM action components."
+      },
+      {
+        "tag": "p",
+        "content": "CRM action components are imported from @hubspot/ui-extensions/crm."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/figma-design-kit#access-the-kit",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Figma Design Kit (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Access the kit"
+      },
+      {
+        "tag": "h2",
+        "content": "Using the kit"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Figma Design Kit is a visual representation of the UI components you can include in React-based app cards in UI extensions. Using this kit, you can create more detailed designs to plan out UI extensions, and can be particularly helpful when needing to share demos with stakeholders or keep teams aligned during the development process."
+      },
+      {
+        "tag": "p",
+        "content": "Along with containing visual examples of UI components, the kit also contains high-level UI extension design information, such as a breakdown of app card anatomy and examples of available locations. Note that HubSpot will update this kit over time as new components are added, but the UI component documentation will be the most up to date source of truth for available components. Be sure to check the changelog for any recent or upcoming additions."
+      },
+      {
+        "tag": "p",
+        "content": "Learn more about using UI kits in Figma's documentation."
+      },
+      {
+        "tag": "p",
+        "content": "Please note: the Figma Design Kit is in beta and is therefore subject to HubSpot's developer beta terms. The contents of the kit may change during this period."
+      },
+      {
+        "tag": "p",
+        "content": "Click the button below to access the Figma Design Kit."
+      },
+      {
+        "tag": "p",
+        "content": "After accessing the kit, it's recommended to open the kit in your Figma desktop app, then duplicate it to your drafts:"
+      },
+      {
+        "tag": "p",
+        "content": "Learn more about copying UI kits."
+      },
+      {
+        "tag": "p",
+        "content": "In the Pages section of the left sidebar, you'll find a Documentation section which contains the following pages:"
+      },
+      {
+        "tag": "p",
+        "content": "Changelog: recent additions and changes, along with upcoming additions. Each entry will include a link to relevant documentation when available, along with the release date."
+      },
+      {
+        "tag": "p",
+        "content": "In the Components section, you'll find the currently available design pages for UI components. Component pages will include a description of the component along with visual examples of different states and variants."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/figma-design-kit#using-the-kit",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Figma Design Kit (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Access the kit"
+      },
+      {
+        "tag": "h2",
+        "content": "Using the kit"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Figma Design Kit is a visual representation of the UI components you can include in React-based app cards in UI extensions. Using this kit, you can create more detailed designs to plan out UI extensions, and can be particularly helpful when needing to share demos with stakeholders or keep teams aligned during the development process."
+      },
+      {
+        "tag": "p",
+        "content": "Along with containing visual examples of UI components, the kit also contains high-level UI extension design information, such as a breakdown of app card anatomy and examples of available locations. Note that HubSpot will update this kit over time as new components are added, but the UI component documentation will be the most up to date source of truth for available components. Be sure to check the changelog for any recent or upcoming additions."
+      },
+      {
+        "tag": "p",
+        "content": "Learn more about using UI kits in Figma's documentation."
+      },
+      {
+        "tag": "p",
+        "content": "Please note: the Figma Design Kit is in beta and is therefore subject to HubSpot's developer beta terms. The contents of the kit may change during this period."
+      },
+      {
+        "tag": "p",
+        "content": "Click the button below to access the Figma Design Kit."
+      },
+      {
+        "tag": "p",
+        "content": "After accessing the kit, it's recommended to open the kit in your Figma desktop app, then duplicate it to your drafts:"
+      },
+      {
+        "tag": "p",
+        "content": "Learn more about copying UI kits."
+      },
+      {
+        "tag": "p",
+        "content": "In the Pages section of the left sidebar, you'll find a Documentation section which contains the following pages:"
+      },
+      {
+        "tag": "p",
+        "content": "Changelog: recent additions and changes, along with upcoming additions. Each entry will include a link to relevant documentation when available, along with the release date."
+      },
+      {
+        "tag": "p",
+        "content": "In the Components section, you'll find the currently available design pages for UI components. Component pages will include a description of the component along with visual examples of different states and variants."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/figma-design-kit#figma-design-kit-beta",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Figma Design Kit (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Access the kit"
+      },
+      {
+        "tag": "h2",
+        "content": "Using the kit"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Figma Design Kit is a visual representation of the UI components you can include in React-based app cards in UI extensions. Using this kit, you can create more detailed designs to plan out UI extensions, and can be particularly helpful when needing to share demos with stakeholders or keep teams aligned during the development process."
+      },
+      {
+        "tag": "p",
+        "content": "Along with containing visual examples of UI components, the kit also contains high-level UI extension design information, such as a breakdown of app card anatomy and examples of available locations. Note that HubSpot will update this kit over time as new components are added, but the UI component documentation will be the most up to date source of truth for available components. Be sure to check the changelog for any recent or upcoming additions."
+      },
+      {
+        "tag": "p",
+        "content": "Learn more about using UI kits in Figma's documentation."
+      },
+      {
+        "tag": "p",
+        "content": "Please note: the Figma Design Kit is in beta and is therefore subject to HubSpot's developer beta terms. The contents of the kit may change during this period."
+      },
+      {
+        "tag": "p",
+        "content": "Click the button below to access the Figma Design Kit."
+      },
+      {
+        "tag": "p",
+        "content": "After accessing the kit, it's recommended to open the kit in your Figma desktop app, then duplicate it to your drafts:"
+      },
+      {
+        "tag": "p",
+        "content": "Learn more about copying UI kits."
+      },
+      {
+        "tag": "p",
+        "content": "In the Pages section of the left sidebar, you'll find a Documentation section which contains the following pages:"
+      },
+      {
+        "tag": "p",
+        "content": "Changelog: recent additions and changes, along with upcoming additions. Each entry will include a link to relevant documentation when available, along with the release date."
+      },
+      {
+        "tag": "p",
+        "content": "In the Components section, you'll find the currently available design pages for UI components. Component pages will include a description of the component along with visual examples of different states and variants."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/accordion",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Accordion | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Accordion component renders an expandable and collapsable section that can contain other components. This component can be helpful for saving space and breaking up extension content."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/alert",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Alert | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "Use the Alert component to render an alert within a card. Use this component to give usage guidance, notify users of action results, or warn them about potential issues or failures. Alerts can be placed in components statically or triggered dynamically as the result of an action."
+      },
+      {
+        "tag": "p",
+        "content": "If you want to render an alert banner at the top of the page, Learn more about the AddAlert method."
+      },
+      {
+        "tag": "p",
+        "content": "There are five alert types, which can be set using the variant prop."
+      },
+      {
+        "tag": "p",
+        "content": "info: a blue alert for general messages to inform the user."
+      },
+      {
+        "tag": "p",
+        "content": "tip: a white alert to provide guidance and tips."
+      },
+      {
+        "tag": "p",
+        "content": "success: a green alert to indicate the successful completion of a task or to convey a positive CRM record status."
+      },
+      {
+        "tag": "p",
+        "content": "warning: a yellow alert for general warnings related to the performance of the system or the status of the CRM record."
+      },
+      {
+        "tag": "p",
+        "content": "danger: a red alert indicating an error, the degradation of a system, or a negative CRM record status. You should not use this alert type for anything other than errors and negative statuses."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/box",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Box | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Using numbers in flex"
+      },
+      {
+        "tag": "h3",
+        "content": "Using alignSelf"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Box component renders an empty div container for fine tuning the spacing of components. Commonly used with the Flex component."
+      },
+      {
+        "tag": "p",
+        "content": "To see an example of how Flex and Box can be used for layout, check out HubSpot's Manage layouts: Flex and Box sample project."
+      },
+      {
+        "tag": "p",
+        "content": "You only need to use Box as a wrapper for components that you want to adjust. For example, if you wrap one component in a Box with a flex value, only that one component will have its width adjusted based on the available empty space."
+      },
+      {
+        "tag": "p",
+        "content": "Use the flex prop in a Box component to assign any extra spacing to components using either a default value (e.g. auto) or a specific number. When using a number, the components will be distributed based on the ratio of their assigned numbers. This also means that, when assigning a flex value for only one Box, you can use any number, because any number by itself will result in all available space being assigned to that Box."
+      },
+      {
+        "tag": "p",
+        "content": "For example, the four tiles below take up an increasing amount of space based on their flex values."
+      },
+      {
+        "tag": "p",
+        "content": "Use the alignSelf prop to override alignment rules for individual Box components."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/button",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Button | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Button component renders a single button. Use this component to enable users to perform actions, such as submitting a form, sending data to an external system, or deleting data."
+      },
+      {
+        "tag": "p",
+        "content": "Button text is passed into the component like a standard HTML element, rather than through a prop."
+      },
+      {
+        "tag": "p",
+        "content": "Using the variant prop, you can set the color of the button."
+      },
+      {
+        "tag": "p",
+        "content": "Primary: a dark blue button for the most frequently used or most important action on an extension. Each extension should only have one primary button."
+      },
+      {
+        "tag": "p",
+        "content": "Secondary: a grey button to provide alternative or non-primary actions. Each extension should include no more than two secondary buttons."
+      },
+      {
+        "tag": "p",
+        "content": "Destructive: a red button for actions that delete, disconnect, or perform any action that the user can't undo. Button text should clearly communicate what is being deleted or disconnected. After a destructive button is clicked, the user should have to verify or confirm the action."
+      },
+      {
+        "tag": "p",
+        "content": "Transparent: a button with the background and border color removed, styled like a hyperlink."
+      },
+      {
+        "tag": "p",
+        "content": "Please note: HubSpot does not provide variant options for the orange buttons you’ll find across the app (both solid and outlined). Those color variants are reserved for the HubSpot product, which helps to maintain the hierarchy of available actions on a given page."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/button-row",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "ButtonRow | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Dropdown variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The ButtonRow component renders a row of specified Button components. Use this component when you want to include multiple buttons in a row."
+      },
+      {
+        "tag": "p",
+        "content": "When the number of included buttons exceeds the available space, the extra buttons will be presented as a Dropdown style button, which you can configure using the dropDownButtonOptions prop."
+      },
+      {
+        "tag": "p",
+        "content": "Buttons that exceed available space will be presented in one Dropdown style button. You can use the dropDownButtonOptions prop to customize its appearance. This prop takes an object that can include size, text, and variant fields. The size and variant fields use the same options available for those props in the Dropdown component."
+      },
+      {
+        "tag": "p",
+        "content": "Comma-separate values in dropDownButtonOptions to configure multiple options."
+      },
+      {
+        "tag": "p",
+        "content": "A primary and secondary button in a row to progress through a multi-step form."
+      },
+      {
+        "tag": "p",
+        "content": "A destructive and secondary button in a row to confirm and cancel a contact deletion."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/charts/overview",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Charts overview | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Formatting data"
+      },
+      {
+        "tag": "h2",
+        "content": "Configuring axes"
+      },
+      {
+        "tag": "h2",
+        "content": "Chart options"
+      },
+      {
+        "tag": "h2",
+        "content": "Colors"
+      },
+      {
+        "tag": "h2",
+        "content": "Design guidelines"
+      },
+      {
+        "tag": "h3",
+        "content": "datetime values"
+      },
+      {
+        "tag": "h3",
+        "content": "Data options"
+      },
+      {
+        "tag": "h3",
+        "content": "Stacking"
+      },
+      {
+        "tag": "h3",
+        "content": "Default color set"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "Use charts to display data visualizations in UI extensions. HubSpot provides two chart components: BarChart and LineChart. Both components use the same API, but the each type is better suited for different types of data. For example, a bar chart is generally recommended for comparing categorical data, while a line chart is recommended for time series plots or visualizing trends. To see an example of how to implement charts in a UI extension, check out HubSpot's Charts example projects."
+      },
+      {
+        "tag": "p",
+        "content": "Learn more about creating custom charts with UI extensions by watching this video on the HubSpot Developers YouTube channel."
+      },
+      {
+        "tag": "p",
+        "content": "On this page:"
+      },
+      {
+        "tag": "p",
+        "content": "For both types of charts, there are three main props:"
+      },
+      {
+        "tag": "p",
+        "content": "Data should be provided to a chart component in an array of objects containing key-value pairs, matching the following format {string: number | string}. Data will be displayed in the order it's provided to the component, so you will need to sort data beforehand if necessary. For example, to display data over time in a LineChart, you should sort the data in ascending/descending order of your datetime axis field before passing it to the chart component."
+      },
+      {
+        "tag": "p",
+        "content": "When building out a chart, keep the following in mind:"
+      },
+      {
+        "tag": "p",
+        "content": "For charts that include datetime data, you can use the following formats:"
+      },
+      {
+        "tag": "p",
+        "content": "It's recommended to pre-format your data into human-readable text so that it doesn't need any additional relabeling. However, if there are times when you can't pre-format certain values in your data, you can include an options field in the data prop to set propertyLabels. Including options will slightly change the way you format data:"
+      },
+      {
+        "tag": "p",
+        "content": "For example, the following chart is configured to relabel the dealstage and user_id values."
+      },
+      {
+        "tag": "p",
+        "content": "The axes prop configures the chart's axes. Charts can have two axes (x and y), and each axis is configured by a field and fieldType parameter. By default, the field value will be used as the axis label, but you can also include a label parameter to set it separately."
+      },
+      {
+        "tag": "p",
+        "content": "Please note: one axis must have a fieldType of linear."
+      },
+      {
+        "tag": "p",
+        "content": "The following bar chart displays sales data by type of product and count of sales. To add visual clarity, each bar is assigned a different color via the groupFieldByColor parameter in options."
+      },
+      {
+        "tag": "p",
+        "content": "Use the stacking axes option to stack data by group. For example, the following bar chart displays the number of deals by deal stage. The data also includes the sales rep who owns each deal. To visually distinguish sales reps in each column, stacking has been set to true."
+      },
+      {
+        "tag": "p",
+        "content": "Compare the above visualization to the version below without stacking:"
+      },
+      {
+        "tag": "p",
+        "content": "Similarly, you can use stacking in line charts, as shown in the example chart below. This chart measures website visits by date, broken down by source. Stacking in this example helps to emphasize volume over time."
+      },
+      {
+        "tag": "p",
+        "content": "Compare the above visualization to the version below without stacking:"
+      },
+      {
+        "tag": "p",
+        "content": "Using the options prop, you can configure a chart with options such as displaying a chart title, legend, data labels, or specifying the color list."
+      },
+      {
+        "tag": "p",
+        "content": "Title: the title of the chart."
+      },
+      {
+        "tag": "p",
+        "content": "Legend: lists the data categories with their corresponding color for readability."
+      },
+      {
+        "tag": "p",
+        "content": "Data labels: labels for data points."
+      },
+      {
+        "tag": "p",
+        "content": "Tooltips: displays details for data points on hover."
+      },
+      {
+        "tag": "p",
+        "content": "By default, HubSpot will apply colors to chart bars or lines using a default set of colors when groupFieldByColor is specified in axes options. You can customize these colors in two ways:"
+      },
+      {
+        "tag": "p",
+        "content": "For example, the chart below is configured to apply colors to data in the Product field using groupFieldByColor. The three colors (darkGreen, blue, darkPurple) will be applied first, then the standard color order will be applied to any additional bars."
+      },
+      {
+        "tag": "p",
+        "content": "If instead you want to manually apply colors to specific field values, rather than have HubSpot assign colors in order, you could instead include the colors field in the axes options. In colors, you'll need to specify each value from the groupFieldByColor field to assign a color to."
+      },
+      {
+        "tag": "p",
+        "content": "Below are the available colors in their default order."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/charts/bar-chart",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "BarChart | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Colors"
+      },
+      {
+        "tag": "h2",
+        "content": "Stacking"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The BarChart component renders a bar chart for visualizing data. This type of chart is best suited for comparing categorical data. Alternatively, you can use a LineChart component for time series plots or visualizing trend data. Learn more about charts."
+      },
+      {
+        "tag": "p",
+        "content": "To see an example of how to implement charts in a UI extension, check out HubSpot's Charts example projects."
+      },
+      {
+        "tag": "p",
+        "content": "To apply colors to a chart for visual clarity, you can group data fields by color using the groupFieldByColor parameter within the axes options. For example, the bar chart below use groupFieldByColor to add colors to each Product defined in the dataset."
+      },
+      {
+        "tag": "p",
+        "content": "For comparison, below is the same chart without groupFieldByColor configured for the axes:"
+      },
+      {
+        "tag": "p",
+        "content": "Colors will be automatically assigned in a preset order. To customize the color selection order, include the colorList field in the options prop, then specify the colors to pick from as shown below."
+      },
+      {
+        "tag": "p",
+        "content": "Or you can specify colors to use for specific values in the field specified in groupFieldByColor. To do so, include the colors field within the axes options, then specify each field value and color, as shown below. Learn more about colors."
+      },
+      {
+        "tag": "p",
+        "content": "Use the stacking axes option to stack grouped data rather than rendering individual bars. For example, the following bar chart displays the number of deals by deal stage. The data also includes the sales rep who owns each deal. Because two sales reps have deals in the same deal stage, stacking has been set to true to visually combine the data into one bar."
+      },
+      {
+        "tag": "p",
+        "content": "Because the dealstage field data is not written in a human-readable format (e.g., appointmentScheduled), the data prop includes propertyLabels in its options to convert the labels. Note that the data prop formatting is slightly different to accommodate both the dataset and its options. Learn more about data options."
+      },
+      {
+        "tag": "p",
+        "content": "For comparison, below is the same chart without stacking. In this version, each sales rep has their own bar in the deal stage category."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/charts/line-chart",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "LineChart | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Colors"
+      },
+      {
+        "tag": "h2",
+        "content": "Stacking"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The LineChart component renders a line chart for visualizing data. This type of chart is best suited for time series plots or trend data. Alternatively, you can use a BarChart component for comparing categorical data. Learn more about charts."
+      },
+      {
+        "tag": "p",
+        "content": "To see an example of how to implement charts in a UI extension, check out HubSpot's Charts example projects."
+      },
+      {
+        "tag": "p",
+        "content": "To apply colors to a chart for visual clarity, you can group data fields by color using the groupFieldByColor parameter within the axes options. For example, the line chart below use groupFieldByColor to add colors to each Breakdown category defined in the dataset."
+      },
+      {
+        "tag": "p",
+        "content": "Colors will be automatically assigned in a preset order. To customize the color selection order, include the colorList field in the options prop, then specify the colors to pick from as shown below."
+      },
+      {
+        "tag": "p",
+        "content": "Or you can specify colors to use for specific values in the field specified in groupFieldByColor. To do so, include the colors field within the axes options, then specify each field value and color, as shown below. Learn more about colors."
+      },
+      {
+        "tag": "p",
+        "content": "Use the stacking axes option to stack grouped data for visual comparison. For example, the following line chart displays website visits over time broken down by source. To help users compare data within each breakdown category, stacking has been set to true."
+      },
+      {
+        "tag": "p",
+        "content": "Because the breakdown field data is all lowercase (e.g., direct), the data prop includes propertyLabels in its options to convert the labels. Note that the data prop formatting is slightly different to accommodate both the dataset and its options. Learn more about data options."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/checkbox",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Checkbox | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Checkbox component renders single checkbox input. If you want to display multiple checkboxes, you should use ToggleGroup instead, as it comes with extra logic for handling multiple checkboxes and radio buttons."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/date-input",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "DateInput | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The DateInput component renders an input field where a user can select a date."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/description-list",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "DescriptionList | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "DescriptionList props"
+      },
+      {
+        "tag": "h3",
+        "content": "DescriptionListItem props"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The DescriptionList component renders pairs of labels and values. Use this component to display pairs of labels and values in a way that's easy to read at a glance. It also contains a DescriptionListItem subcomponent."
+      },
+      {
+        "tag": "p",
+        "content": "By default, list items will be stacked vertically. You can use the the direction prop to stack them horizontally."
+      },
+      {
+        "tag": "p",
+        "content": "row:"
+      },
+      {
+        "tag": "p",
+        "content": "column (default):"
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/divider",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Divider | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Divider component renders a grey, horizontal line for spacing out components vertically or creating sections in an extension. Use this component to space out other components when the content needs more separation than white space."
+      },
+      {
+        "tag": "p",
+        "content": "Using the distance prop, you can set the amount of padding above and below the divider. Values range from 'extra-small' to 'extra-large' (small by default)."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/dropdown",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Dropdown | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Dropdown component renders a dropdown menu that can appear as a button or hyperlink. Use this component to enable users to select from multiple options in a compact list. This component includes sizing options."
+      },
+      {
+        "tag": "p",
+        "content": "Using the variant and buttonSize props, you can set the type of button along with its size."
+      },
+      {
+        "tag": "p",
+        "content": "'primary' buttons with size set to 'xs', 'sm', and 'md' respectively:"
+      },
+      {
+        "tag": "p",
+        "content": "'secondary' buttons with size set to 'xs', 'sm', and 'md' respectively:"
+      },
+      {
+        "tag": "p",
+        "content": "'transparent' buttons with size set to 'sm' and 'md' respectively:"
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/empty-state",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "EmptyState | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The EmptyState component sets the content that appears when the extension is in an empty state. Use this component when there's no content or data to help guide users."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/error-state",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "ErrorState | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The ErrorState component sets the content of an erroring extension. Use this component to guide users through resolving errors that your extension might encounter."
+      },
+      {
+        "tag": "p",
+        "content": "Using the type prop, you can set one of three illustrations."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/flex",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Flex | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Horizontal layout"
+      },
+      {
+        "tag": "h3",
+        "content": "Wrap"
+      },
+      {
+        "tag": "h3",
+        "content": "Vertical layout"
+      },
+      {
+        "tag": "h3",
+        "content": "Spacing"
+      },
+      {
+        "tag": "h3",
+        "content": "Using Flex in Flex"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Flex component renders an empty div container set to display=flex. When wrapped around other components, it enables those child components to be arranged using props. Flex can contain other Flex or Box components."
+      },
+      {
+        "tag": "p",
+        "content": "To see an example of how Flex and Box can be used for layout, check out HubSpot's Manage layouts: Flex and Box sample project."
+      },
+      {
+        "tag": "p",
+        "content": "To arrange components horizontally, set direction to row. Then, use justify to configure the horizontal distribution. By default, components will stretch across the container if justify is not specified."
+      },
+      {
+        "tag": "p",
+        "content": "By default, components in a row will be arranged on one line when possible. Use the wrap prop to wrap components onto new lines when needed."
+      },
+      {
+        "tag": "p",
+        "content": "To arrange components vertically, set direction to column, then use the align prop to distribute them. By default, components will stretch across the extension container width when align is not specified."
+      },
+      {
+        "tag": "p",
+        "content": "In the Flex component, you can use the gap prop to apply even spacing between the tiles. This prop will apply spacing equally for both row and column directions."
+      },
+      {
+        "tag": "p",
+        "content": "You can wrap child Flex components with Flex to set more specific rules for individual components. A child Flex component will not inherit props specified in the parent Flex component, so you'll need to repeat any props you've previously defined to maintain them."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/form",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Form | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Form component renders a form that can contain other subcomponents, such as Input, Select, and Button. Use this component to enable users to submit data to HubSpot or an external system."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/heading",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Heading | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage example"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Heading component renders large heading text. Use this component to introduce or differentiate sections of your component."
+      },
+      {
+        "tag": "p",
+        "content": "The title at the top of an extension to introduce its content."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/icon",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Icon | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Spacing"
+      },
+      {
+        "tag": "h2",
+        "content": "Available icons"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "Use the Icon component to render a visual icon within other components. It can generally be used inside most components, excluding ones that don't support child components (e.g., the Input component does not support icons)."
+      },
+      {
+        "tag": "p",
+        "content": "By default, spacing is not added around the icon. However, there may be times when you want more space between the icon and neighboring text. You can do this by manually adding a space to the text string, or by using &nbsp; or {\" \"} as shown below."
+      },
+      {
+        "tag": "p",
+        "content": "Below are the currently available icons and their name values."
+      },
+      {
+        "tag": "p",
+        "content": "Always pair icons with text. If that is not possible, include the screenReaderText prop to convey the icon's meaning for users with screen readers."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/image",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Image | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Image guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Image component renders an image. Use this component to add a logo or other visual brand identity asset, or to accentuate other content in the extension."
+      },
+      {
+        "tag": "p",
+        "content": "Images cannot exceed the width of the extension's container at various screen sizes, and values beyond that maximum width will not be applied to the image."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/input",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Input | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage example"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Input component renders a text input field where a user can enter a custom text value. Like other inputs, this component should only be used within a Form that has a submit button."
+      },
+      {
+        "tag": "p",
+        "content": "Use for form fields where a user can enter any text value, such as email address or name."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/link",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Link | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Link component renders a clickable hyperlink. Use links to direct users to a web page, another part of the HubSpot app, or use them as buttons."
+      },
+      {
+        "tag": "p",
+        "content": "Using the variant prop, you can set the following styling:"
+      },
+      {
+        "tag": "p",
+        "content": "primary: the default blue (#0091ae)."
+      },
+      {
+        "tag": "p",
+        "content": "light: a white link that turns to a lighter shade of blue on hover (#7fd1de)."
+      },
+      {
+        "tag": "p",
+        "content": "dark: a darker shade of blue (#33475b)."
+      },
+      {
+        "tag": "p",
+        "content": "destructive: a red link (#f2545b)."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/list",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "List | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The List component renders a list of items. Each item in List will be wrapped in <li> tags. A list can be styled as inline, ordered, or unordered with the variant prop."
+      },
+      {
+        "tag": "p",
+        "content": "By default, lists will be configured as vertically stacked list items without bullets. To customize the styling, use the variant prop, as shown below."
+      },
+      {
+        "tag": "p",
+        "content": "To create a bulleted unordered list:"
+      },
+      {
+        "tag": "p",
+        "content": "To create a numbered list without styling:"
+      },
+      {
+        "tag": "p",
+        "content": "To create a numbered list with styling:"
+      },
+      {
+        "tag": "p",
+        "content": "To stack list items horizontally:"
+      },
+      {
+        "tag": "p",
+        "content": "To stack list items horizontally with a divider between each item:"
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/loading-button",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "LoadingButton | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Opening overlays"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The LoadingButton component renders a button with loading state options. It includes the same props as the Button component with a few additional props for managing loading state."
+      },
+      {
+        "tag": "p",
+        "content": "Include this prop to open a URL on click. Contains the following fields:"
+      },
+      {
+        "tag": "p",
+        "content": "external (boolean): set to true to open the URL in a new tab and display an external link icon. By default:"
+      },
+      {
+        "tag": "p",
+        "content": "Links to HubSpot app pages will open in the same tab and will not include an icon."
+      },
+      {
+        "tag": "p",
+        "content": "Links to non-HubSpot app pages will open in a new tab and include the icon."
+      },
+      {
+        "tag": "p",
+        "content": "When a button includes both href and an onClick action, both will be executed on button click."
+      },
+      {
+        "tag": "p",
+        "content": "A function that will be invoked when the button is clicked. It receives no arguments and it's return value is ignored."
+      },
+      {
+        "tag": "p",
+        "content": "When set to true, the button will render in a greyed-out state and cannot be clicked."
+      },
+      {
+        "tag": "p",
+        "content": "Sets the color of the button. See variants section for more information."
+      },
+      {
+        "tag": "p",
+        "content": "'xs', 'extra-small' | 'sm', 'small' | 'med', 'medium' (default)"
+      },
+      {
+        "tag": "p",
+        "content": "Set to true to display the loading indicator and disable the button. Default is false."
+      },
+      {
+        "tag": "p",
+        "content": "Set to an icon name to display an icon after loading. By default, will display a check mark."
+      },
+      {
+        "tag": "p",
+        "content": "Include a Modal or Panel component in this object to open it as an overlay on click. Learn more about using overlays."
+      },
+      {
+        "tag": "p",
+        "content": "Like the Button, Link, Tag, and Image components, the LoadingButton component can open an overlay. In addition, you can use the overlayOptions prop to trigger the overlay either on click or when the loading has finished."
+      },
+      {
+        "tag": "p",
+        "content": "Using the variant prop, you can set the color of the button."
+      },
+      {
+        "tag": "p",
+        "content": "Primary: a dark blue button for the most frequently used or most important action on an extension. Each extension should only have one primary button."
+      },
+      {
+        "tag": "p",
+        "content": "Secondary (default): a grey button to provide alternative or non-primary actions. Each extension should include no more than two secondary buttons."
+      },
+      {
+        "tag": "p",
+        "content": "Destructive: a red button for actions that delete, disconnect, or perform any action that the user can't undo. Button text should clearly communicate what is being deleted or disconnected. After a destructive button is clicked, the user should have to verify or confirm the action."
+      },
+      {
+        "tag": "p",
+        "content": "Please note: HubSpot does not provide variant options for the orange buttons you’ll find across the app (both solid and outlined). Those color variants are reserved for the HubSpot product, which helps to maintain the hierarchy of available actions on a given page."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/loading-spinner",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "LoadingSpinner | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The LoadingSpinner component renders a visual indicator for when an extension is loading or processing data."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/modal",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Modal | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Opening and closing modals"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "Use the Modal component to render a pop-up overlay containing other components. Like the Panel component, you'll include the Modal component in an overlay prop within a Button, LoadingButton, Link, Tag, or Image component."
+      },
+      {
+        "tag": "p",
+        "content": "To see an example of using overlays, check out HubSpot's Overlay example project."
+      },
+      {
+        "tag": "p",
+        "content": "To format the modal, you'll use the following subcomponents:"
+      },
+      {
+        "tag": "p",
+        "content": "By default, HubSpot handles opening the modal when the user clicks the parent Button, LoadingButton, Link, Tag, or Image component. A close button will also be included in the top right of the modal."
+      },
+      {
+        "tag": "p",
+        "content": "In addition, you can add a close mechanism to a modal using a Button, LoadingButton, Link, Tag or Image with an onClick event that triggers the closeOverlay action. To use this action, you'll need to include the actions argument in hubspot.extend() as seen in the example code below."
+      },
+      {
+        "tag": "p",
+        "content": "Learn more about opening and closing overlays."
+      },
+      {
+        "tag": "p",
+        "content": "Please note:"
+      },
+      {
+        "tag": "p",
+        "content": "Use the variant prop to configure the style of modal."
+      },
+      {
+        "tag": "p",
+        "content": "By default, the modal will include a blue colored top bar where the title displays."
+      },
+      {
+        "tag": "p",
+        "content": "To configure the modal as a warning with a red colored top bar, set variant to 'danger'."
+      },
+      {
+        "tag": "p",
+        "content": "DO: use this type of overlay for short messages and confirmations. If you want a more lightweight way to communicate a message to the user, check out the Alert component."
+      },
+      {
+        "tag": "p",
+        "content": "DO: use the danger variant to confirm destructive actions that cannot be undone. The text should clearly communicate what is being deleted, and the confirmation button should be explicit about the action. For example, never use the word \"Okay\" to confirm the deletion of an item. Instead, use \"Delete\"."
+      },
+      {
+        "tag": "p",
+        "content": "Learn more about overlays, including when to use a Modal or a Panel."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/multi-select",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "MultiSelect | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The MultiSelect component renders a dropdown menu select field where a user can select multiple values. Commonly used within the Form component."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/number-input",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "NumberInput | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage example"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The NumberInput component renders a number input field. Commonly used within the Form component."
+      },
+      {
+        "tag": "p",
+        "content": "A field in a form where salespeople can enter the total deal amount."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/panel",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Panel | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Panel props"
+      },
+      {
+        "tag": "h2",
+        "content": "PanelSection props"
+      },
+      {
+        "tag": "h2",
+        "content": "Opening and closing panels"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Panel component renders a panel overlay on the right side of the page and contains other components. Like the Modal component, you'll include the Panel component in an overlay prop within a Button, LoadingButton, Link, Tag, or Image component."
+      },
+      {
+        "tag": "p",
+        "content": "To see an example of using a panel in an extension, check out HubSpot's Build a multi-step flow or Overlay example project."
+      },
+      {
+        "tag": "p",
+        "content": "Please note: as of June 24, 2024, the method for including Panel components has changed. Moving forward:"
+      },
+      {
+        "tag": "p",
+        "content": "Extensions using the old method will continue to function, but it's recommended to review the new functionality below and update your extensions as needed."
+      },
+      {
+        "tag": "p",
+        "content": "The Panel component uses three subcomponents to control its design and content, which follows the general structure below:"
+      },
+      {
+        "tag": "p",
+        "content": "Below are the props available for Panel and PanelSection."
+      },
+      {
+        "tag": "p",
+        "content": "By default, HubSpot handles opening the panel when the user clicks the parent Button, LoadingButton, Link, Tag, or Image component. A close button will also be included in the top right of the panel."
+      },
+      {
+        "tag": "p",
+        "content": "In addition, you can add a close mechanism to a panel using a Button, LoadingButton, Link, Tag or Image with an onClick event that triggers the closeOverlay action. To use this action, you'll need to include the actions argument in hubspot.extend() as seen in the example code below."
+      },
+      {
+        "tag": "p",
+        "content": "Learn more about opening and closing overlays."
+      },
+      {
+        "tag": "p",
+        "content": "Please note:"
+      },
+      {
+        "tag": "p",
+        "content": "By default, the panel will only obscure the content on the right side of the page where it opens. Using the variants prop, you can add an additional overlay behind the panel to blur the rest of the page. This variant puts more focus on the panel and improves accessibility for users with screen readers. Because the modal variant obscures the rest of the page's content, use it only when users don't need other context from the page."
+      },
+      {
+        "tag": "p",
+        "content": "Use a panel when a user needs to submitting an order form for a customer."
+      },
+      {
+        "tag": "p",
+        "content": "Use this component when users need to fill out a longer or multi-step form."
+      },
+      {
+        "tag": "p",
+        "content": "Box"
+      },
+      {
+        "tag": "p",
+        "content": "Button"
+      },
+      {
+        "tag": "p",
+        "content": "LoadingButton"
+      },
+      {
+        "tag": "p",
+        "content": "Divider"
+      },
+      {
+        "tag": "p",
+        "content": "Link"
+      },
+      {
+        "tag": "p",
+        "content": "Image"
+      },
+      {
+        "tag": "p",
+        "content": "Modal"
+      },
+      {
+        "tag": "p",
+        "content": "Tag"
+      },
+      {
+        "tag": "p",
+        "content": "Tile"
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/progress-bar",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "ProgressBar | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The ProgressBar component renders a visual indicator showing a numeric and/or percentage-based representation of progress. The percentage is calculated based on the maximum possible value specified in the component."
+      },
+      {
+        "tag": "p",
+        "content": "Using the variant prop, you can set the following progress bar colors:"
+      },
+      {
+        "tag": "p",
+        "content": "success: a green colored bar to indicate movement towards a positive goal or outcome."
+      },
+      {
+        "tag": "p",
+        "content": "warning: a yellow colored bar to indicate movement towards a negative outcome or limitation."
+      },
+      {
+        "tag": "p",
+        "content": "danger: a red colored bar to indicate movement towards an extremely negative outcome or when a limitation has been reached."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/radio-button",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "RadioButton | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The RadioButton component renders a radio select button. If you want to include more than two radio buttons, or are building a form, it's recommended to use the ToggleGroup component instead."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/select",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Select | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Select component renders a dropdown menu select field where a user can select a single value. A search bar will be automatically included when there are more than seven options."
+      },
+      {
+        "tag": "p",
+        "content": "Using the variant prop, you can set the input to be one of two styles:"
+      },
+      {
+        "tag": "p",
+        "content": "input (default): a standard dropdown menu."
+      },
+      {
+        "tag": "p",
+        "content": "transparent: a hyperlink dropdown menu."
+      },
+      {
+        "tag": "p",
+        "content": "Use this type of field when there are a range of set options to choose from, such as:"
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/statistics",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Statistics | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "StatisticsItem props"
+      },
+      {
+        "tag": "h2",
+        "content": "StatisticsTrend props"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Statistics component renders a visual spotlight of one or more data points. Includes the StatisticsItem and StatisticsTrend subcomponents."
+      },
+      {
+        "tag": "p",
+        "content": "In StatisticsTrend components, use the direction prop to describe whether the data is trend upwards or downwards."
+      },
+      {
+        "tag": "p",
+        "content": "increase: for additions or positive progression for a given time period."
+      },
+      {
+        "tag": "p",
+        "content": "decrease: for subtractions or negative progression for a given time period."
+      },
+      {
+        "tag": "p",
+        "content": "Note that the positive or negative movement of a given statistic is intended solely to represent the increase or decrease in numerical value. Be mindful of how these movements can communicate sentiment. For example, a decrease in support volume can be a net positive, which can be confusing when represented by a red, downward arrow."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/status-tag",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "StatusTag | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The StatusTag component renders a visual indicator to display the current status of an item. Status tags can be static or clickable for invoking functions with the onClick prop."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/step-indicator",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "StepIndicator | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The StepIndicator component renders an indicator to show the current step of a multi-step process."
+      },
+      {
+        "tag": "p",
+        "content": "By default, the step indicator will be laid out horizontally, but you can use the direction prop to set the orientation to vertical instead."
+      },
+      {
+        "tag": "p",
+        "content": "In addition, you can set the size of the step circles using the circleSize prop, ranging from 'xs'/'extra-small' to 'xl'/'extra-large'."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/stepper-input",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "StepperInput | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The StepperInput component renders a number input field that can be increased or decreased by a set number."
+      },
+      {
+        "tag": "p",
+        "content": "This component inherits many of its props from the NumberInput component, with an additional set of props to control the increase/decrease interval."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/table",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Table | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Table props"
+      },
+      {
+        "tag": "h2",
+        "content": "TableHeader props"
+      },
+      {
+        "tag": "h2",
+        "content": "TableCell props"
+      },
+      {
+        "tag": "h2",
+        "content": "Paginated tables"
+      },
+      {
+        "tag": "h2",
+        "content": "Sortable tables"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Table component renders a table. To format the table, you can use the following subcomponents:"
+      },
+      {
+        "tag": "p",
+        "content": "To include paginated navigation below a table, set the Table prop paginated to true."
+      },
+      {
+        "tag": "p",
+        "content": "You'll then include the following props to further configure pagination:"
+      },
+      {
+        "tag": "p",
+        "content": "To add sorting functionality to a table, you can include the sortDirection and onSortChange props in the table's TableHeader components. To enable table data to dynamically reorder based on user input, you'll need to store your table data in variables rather than hard coding it into table cells. Below is an example of a sortable table with a static table footer."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/tag",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Tag | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Alignment"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Tag component renders a tag to label or categorize information or other components. Tags can be static or clickable for invoking functions."
+      },
+      {
+        "tag": "p",
+        "content": "Using the variant prop, you can choose from one of five tag colors:"
+      },
+      {
+        "tag": "p",
+        "content": "Using the inline prop, you can set a tag to align side-by-side with surrounding text. Below are examples of inline tags next to single-line text and multi-line text."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/text",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Text | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Text component renders text with formatting options."
+      },
+      {
+        "tag": "p",
+        "content": "Using the format prop, you can style text with a number of options:"
+      },
+      {
+        "tag": "p",
+        "content": "You can also control text size with the variant prop."
+      },
+      {
+        "tag": "p",
+        "content": "variant=\"bodytext\" (default)"
+      },
+      {
+        "tag": "p",
+        "content": "variant=\"microcopy\""
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/text-area",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "TextArea | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage example"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The TextArea component renders a fillable text field. Includes props to customize the size of the field along with maximum number of characters and resizability."
+      },
+      {
+        "tag": "p",
+        "content": "A field where salespeople can leave comments after meeting a new client."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/tile",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Tile | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Tile component renders a square tile that can contain other components. Use this component to create groups of related components."
+      },
+      {
+        "tag": "p",
+        "content": "Using the flush prop, you can remove left and right padding from the tile contents."
+      },
+      {
+        "tag": "p",
+        "content": "flush={false} (default)"
+      },
+      {
+        "tag": "p",
+        "content": "flush={true}"
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/toggle",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Toggle | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The Toggle component renders a boolean toggle switch that can be configured with sizing, label position, read-only, and more."
+      },
+      {
+        "tag": "p",
+        "content": "Using the labelDisplay and size props, you can customize toggle appearance."
+      },
+      {
+        "tag": "p",
+        "content": "labelDisplay: set to 'inline' or 'top' to configure the label position, or set to 'hidden' to hide the label."
+      },
+      {
+        "tag": "p",
+        "content": "size: by default, toggles are set to 'medium'. Shrink the toggle size by setting this prop to 'xs'/'extra-small' or 'sm'/'small'. Note that only medium toggles will display ON/OFF status text."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/standard-components/toggle-group",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "ToggleGroup | UI extension components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Usage examples"
+      },
+      {
+        "tag": "h2",
+        "content": "Guidelines"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The ToggleGroup component renders a list of selectable options, either in radio button or checkbox form."
+      },
+      {
+        "tag": "p",
+        "content": "By default, the toggle group will render as a vertical list of checkboxes. Using the toggleType prop, you can set the options to display as checkboxes or radio buttons. You can also use the inline prop to stack options horizontally."
+      },
+      {
+        "tag": "p",
+        "content": "toggleType='checkboxList' (default)"
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/crm-action-components/crm-action-button",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "CrmActionButton | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The CrmActionButton component renders a button that can execute a built-in set of CRM actions."
+      },
+      {
+        "tag": "p",
+        "content": "This type of component is useful for enabling your extension to interact with other CRM entities, such as records and engagements. To learn more about how CRM action components work together, check out the CRM action components overview."
+      },
+      {
+        "tag": "p",
+        "content": "Using the variant prop, you can set the color of the button."
+      },
+      {
+        "tag": "p",
+        "content": "Primary: a dark blue button for the most frequently used or most important action on an extension. Each extension should only have one primary button."
+      },
+      {
+        "tag": "p",
+        "content": "Secondary: a grey button to provide alternative or non-primary actions. Each extension should include no more than two secondary buttons."
+      },
+      {
+        "tag": "p",
+        "content": "Destructive: a red button for actions that delete, disconnect, or perform any action that the user can't undo. Button text should clearly communicate what is being deleted or disconnected. After a destructive button is clicked, the user should have to verify or confirm the action."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/crm-action-components/crm-action-link",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "CrmActionLink | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Variants"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The CrmActionLink component renders a clickable link that can execute a built-in set of CRM actions."
+      },
+      {
+        "tag": "p",
+        "content": "This type of component is useful for enabling your extension to interact with other CRM entities, such as records and engagements. To learn more about how CRM action components work together, check out the CRM action components overview."
+      },
+      {
+        "tag": "p",
+        "content": "Using the variant prop, you can control the color of the link."
+      },
+      {
+        "tag": "p",
+        "content": "primary: the default blue (#0091ae)."
+      },
+      {
+        "tag": "p",
+        "content": "light: a white link that turns to a lighter shade of blue on hover (#7fd1de)."
+      },
+      {
+        "tag": "p",
+        "content": "dark: a darker shade of blue (#33475b)."
+      },
+      {
+        "tag": "p",
+        "content": "destructive: a red link (#f2545b)."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/crm-action-components/crm-card-actions",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "CrmCardActions | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The CrmCardActions component renders a smaller standalone or dropdown menu button that can contain multiple CRM actions."
+      },
+      {
+        "tag": "p",
+        "content": "This type of component is useful for enabling your extension to interact with other CRM entities, such as records and engagements. To learn more about how CRM action components work together, check out the CRM action components overview."
+      },
+      {
+        "tag": "p",
+        "content": "Unlike CrmActionButton and CrmActionLink where props such as actionType are accepted at the top level, CrmCardActions includes an actionConfigs prop which accepts fields for action configuration."
+      },
+      {
+        "tag": "p",
+        "content": "In the actionConfigs array, you can include the following fields:"
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/crm-action-components/overview",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "CRM action components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Available components"
+      },
+      {
+        "tag": "h2",
+        "content": "Available actions"
+      },
+      {
+        "tag": "h3",
+        "content": "Preview a CRM record"
+      },
+      {
+        "tag": "h3",
+        "content": "Create a note"
+      },
+      {
+        "tag": "h3",
+        "content": "Create a task"
+      },
+      {
+        "tag": "h3",
+        "content": "Send a one-to-one-email"
+      },
+      {
+        "tag": "h3",
+        "content": "Schedule a meeting"
+      },
+      {
+        "tag": "h3",
+        "content": "Create an associated record"
+      },
+      {
+        "tag": "h3",
+        "content": "Navigate to an engagement"
+      },
+      {
+        "tag": "h3",
+        "content": "Navigate to a CRM record"
+      },
+      {
+        "tag": "h3",
+        "content": "Navigate to a HubSpot page"
+      },
+      {
+        "tag": "h3",
+        "content": "Navigate to an external page"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "CRM action components provide a built-in set of CRM-related actions, including adding notes to records, opening a one-to-one email composition window, creating new records, and more. Each component can perform the same set of actions, so which component to choose will depend on your needs and preferences."
+      },
+      {
+        "tag": "p",
+        "content": "Below, learn more about CRM action components and actions available to each."
+      },
+      {
+        "tag": "p",
+        "content": "CRM action components are imported from @hubspot/ui-extensions/crm."
+      },
+      {
+        "tag": "p",
+        "content": "Users can only take actions through these components when they have the proper permissions. For example, if a user doesn't have permission to create deal records, they won't be able to use a CRM action component to create a deal record. Instead, an error message will be generated and returned through an optional onError callback."
+      },
+      {
+        "tag": "p",
+        "content": "Each action requires an actionType and actionContext."
+      },
+      {
+        "tag": "p",
+        "content": "The following actions are available for CRM action components:"
+      },
+      {
+        "tag": "p",
+        "content": "The PREVIEW_OBJECT action opens a preview sidebar for the specified CRM record."
+      },
+      {
+        "tag": "p",
+        "content": "Requires the following actionContext:"
+      },
+      {
+        "tag": "p",
+        "content": "The ADD_NOTE action opens a note composition window, enabling users to add a note to the specified CRM record."
+      },
+      {
+        "tag": "p",
+        "content": "Requires the following actionContext:"
+      },
+      {
+        "tag": "p",
+        "content": "The ADD_TASK action opens a task composition window, enabling users to add a task to the specified CRM record."
+      },
+      {
+        "tag": "p",
+        "content": "Requires the following actionContext:"
+      },
+      {
+        "tag": "p",
+        "content": "The SEND_EMAIL action opens a one-to-one email composition window, enabling users to send an email to the specified contact or the contacts associated with the specified record."
+      },
+      {
+        "tag": "p",
+        "content": "Requires the following actionContext:"
+      },
+      {
+        "tag": "p",
+        "content": "The SCHEDULE_MEETING action opens a window for scheduling a meeting."
+      },
+      {
+        "tag": "p",
+        "content": "Requires the following actionContext:"
+      },
+      {
+        "tag": "p",
+        "content": "The OPEN_RECORD_ASSOCIATION_FORM action opens a side panel for creating a new record to be associated with another."
+      },
+      {
+        "tag": "p",
+        "content": "Requires the following actionContext:"
+      },
+      {
+        "tag": "p",
+        "content": "The ENGAGEMENT_APP_LINK action navigates the user to a specific engagement on a CRM record timeline, such as a call or task."
+      },
+      {
+        "tag": "p",
+        "content": "Requires the following actionContext:"
+      },
+      {
+        "tag": "p",
+        "content": "The RECORD_APP_LINK action navigates the user to a specific CRM record."
+      },
+      {
+        "tag": "p",
+        "content": "Requires the following actionContext:"
+      },
+      {
+        "tag": "p",
+        "content": "The PAGE_APP_LINK navigates the user to any page within the HubSpot account. Use this action when a user would need to navigate to a non-CRM record account page, such as the email tool."
+      },
+      {
+        "tag": "p",
+        "content": "Requires the following actionContext:"
+      },
+      {
+        "tag": "p",
+        "content": "The EXTERNAL_URL action navigates the user to a website page in a new tab."
+      },
+      {
+        "tag": "p",
+        "content": "Requires the following actionContext:"
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/crm-data-components/crm-association-pivot",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "CrmAssociationPivot | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The CrmAssociationPivot component is a CRM data component that renders a list of associated records organized by their assigned association label. You'll specify the type of records that you want to appear along with table attributes such as pagination, sorting, and more. You can either return all labels or specify the labels to return."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/crm-data-components/crm-association-property-list",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "CrmAssociationPropertyList | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The CrmAssociationPropertyList component renders a list of properties belonging to a record associated with the currently displaying record. For example, you can use this component to display properties of a company record from its associated contact record. You can edit these property values inline, and changes will automatically save when leaving the field or pressing Enter."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/crm-data-components/crm-association-stage-tracker",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "CrmAssociationStageTracker | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The CrmAssociationStageTracker component renders a lifecycle or pipeline stage progress bar and a list of properties."
+      },
+      {
+        "tag": "p",
+        "content": "Use this component to show stage progress for records associated with the currently displaying record. Each component instance can fetch data from one type of object (contacts, companies, deals, tickets, or custom objects). You can specify association labels to only display data from associated CRM records with that assigned label. You can also edit the property values inline."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/crm-data-components/crm-association-table",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "CrmAssociationTable | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The CrmAssociationTable component renders a table of associated records with optional filtering, sorting, and search methods. You'll specify the type of records that you want to appear along with the properties to display as columns."
+      },
+      {
+        "tag": "p",
+        "content": "Please note: for quickFilterProperties:"
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/crm-data-components/crm-data-highlight",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "CrmDataHighlight | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The CrmDataHighlight component renders a list of properties along with their values. You can use this component to surface important property data from either the currently displaying record or another specified record."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/crm-data-components/crm-property-list",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "CrmPropertyList | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The CrmPropertyList component renders a list of properties along with their values. You can use this component to surface important property data from either the currently displaying record or another specified record. You can edit these property values inline and will automatically save when leaving the field or pressing Enter."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/crm-data-components/crm-report",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "CrmReport | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The CrmReport component renders a single object report, which can be filtered with the use prop to surface data based on the currently displaying record, its associations, or unfiltered."
+      },
+      {
+        "tag": "p",
+        "content": "By default, the report data will automatically filter for the currently displaying record, as long as there is an association between the displaying record and records included in the report."
+      },
+      {
+        "tag": "p",
+        "content": "For example, using this component you can display a single object report that shows which deals closed this quarter. When viewing the report on a contact record, by default the report will only display data from deals associated with that contact."
+      },
+      {
+        "tag": "p",
+        "content": "This component requires you to specify the ID of the report to render. To get a report's ID:"
+      },
+      {
+        "tag": "p",
+        "content": "Please note: report data will only display for users with permissions to view reports."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/crm-data-components/crm-stage-tracker",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "CrmStageTracker | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The CrmStageTracker component renders a lifecycle or pipeline stage progress bar and a list of properties. Available for contacts, companies, deals, tickets, and custom objects."
+      },
+      {
+        "tag": "p",
+        "content": "Use this component to show stage progress for the currently displaying record, or you can specify a record. You can also edit the property values inline and your changes will automatically save when leaving the field or pressing Enter."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/crm-data-components/crm-statistics",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "CrmStatistics | UI components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Specifying statistics data"
+      },
+      {
+        "tag": "h2",
+        "content": "Related components"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "The CrmStatistics component renders data summaries calculated from the currently displaying CRM record's associations. For example, you can use this component to display data such as:"
+      },
+      {
+        "tag": "p",
+        "content": "To render data, you'll specify the properties you want to read from the associated records along with the type of calculation to perform on the property values. For each property, you can also include filters to narrow down the records that are included in the calculation."
+      },
+      {
+        "tag": "p",
+        "content": "Using the statistics prop, you'll define the data that you want the component to display. Data is fetched from CRM properties, and is calculated based on the specified statisticType. You'll include an object for each statistic that you want to fetch. You can also optionally specify filterGroups to further refine the data."
+      },
+      {
+        "tag": "p",
+        "content": "Below are the supported fields for objects in the statistics array."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/crm-data-components/overview",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "CRM data components (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Available components"
+      },
+      {
+        "tag": "h2",
+        "content": "Filtering data"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "CRM data components can pull data directly from the currently displaying CRM record, including information about associated records and single object reports. These components can only be placed in the middle column of CRM records."
+      },
+      {
+        "tag": "p",
+        "content": "These components are imported from @hubspot/ui-extensions/crm."
+      },
+      {
+        "tag": "p",
+        "content": "In the CrmAssociationPivot and CrmAssociationTable components, you can filter the data to fetch only what's most relevant. Review the table below for available filtering options."
+      }
+    ]
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/reference/ui-components/manage-ui-extension-layout",
+    "content": [
+      {
+        "tag": "h1",
+        "content": "Manage UI extension layout (BETA)"
+      },
+      {
+        "tag": "h2",
+        "content": "On this page"
+      },
+      {
+        "tag": "h2",
+        "content": "Flex"
+      },
+      {
+        "tag": "h2",
+        "content": "Box"
+      },
+      {
+        "tag": "h3",
+        "content": "Horizontal layout"
+      },
+      {
+        "tag": "h3",
+        "content": "Wrap"
+      },
+      {
+        "tag": "h3",
+        "content": "Vertical layout"
+      },
+      {
+        "tag": "h3",
+        "content": "Spacing"
+      },
+      {
+        "tag": "h3",
+        "content": "Using Flex in Flex"
+      },
+      {
+        "tag": "h3",
+        "content": "Share your feedback"
+      },
+      {
+        "tag": "p",
+        "content": "We use cookies to improve HubSpot’s site. Some cookies are necessary for our website and services to function properly. Other cookies are optional and help personalize your experience, including advertising and analytics. You can consent to all cookies, decline all optional cookies, or manage optional cookies. Without a selection, our default cookie settings will apply. You can change your preferences at any time. To learn more, check out our Cookie Policy."
+      },
+      {
+        "tag": "p",
+        "content": "By default, UI extension components will arrange themselves based on their content, order, and any layout-related props included with the component, such as the width prop for images. But you can further configure your extension's layout using the Flex and Box components, which are based on the CSS flexbox layout."
+      },
+      {
+        "tag": "p",
+        "content": "Flex and Box are both used as wrappers around other components. Flex can be used on its own, while Box can be used as a wrapper around Flex child items to fine tune spacing of individual components. Below, learn more about each component along with usage examples."
+      },
+      {
+        "tag": "p",
+        "content": "Check out HubSpot's Managing layout: Flex and Box sample project to view a full example of using Flex and Box."
+      },
+      {
+        "tag": "p",
+        "content": "The Flex component renders an empty div container set to display=flex. When wrapped around other components, this enables those child components to be arranged using props."
+      },
+      {
+        "tag": "p",
+        "content": "Below are the available Flex props. To review all Flex prop definitions, check out the components reference guide."
+      },
+      {
+        "tag": "p",
+        "content": "Review the examples below to see how the Flex component can be used to arrange components in various ways."
+      },
+      {
+        "tag": "p",
+        "content": "To arrange components horizontally, set direction to row. Then, use justify to configure the horizontal distribution. By default, components will stretch across the container if justify is not specified."
+      },
+      {
+        "tag": "p",
+        "content": "To arrange components horizontally and evenly spaced:"
+      },
+      {
+        "tag": "p",
+        "content": "To arrange components horizontally, evenly spaced, and with equal spacing on the left and right margins:"
+      },
+      {
+        "tag": "p",
+        "content": "To arrange components horizontally at the end of the extension container:"
+      },
+      {
+        "tag": "p",
+        "content": "To arrange components horizontally at the center of the extension container:"
+      },
+      {
+        "tag": "p",
+        "content": "To arrange components horizontally at the start of the extension container:"
+      },
+      {
+        "tag": "p",
+        "content": "By default, components in a row will be arranged on one line when possible. Use the wrap prop to wrap components onto new lines when needed."
+      },
+      {
+        "tag": "p",
+        "content": "To arrange components vertically, set direction to column, then use the align prop to distribute them. By default, components will stretch across the extension container width when align is not specified."
+      },
+      {
+        "tag": "p",
+        "content": "To arrange components vertically at the start of the extension container:"
+      },
+      {
+        "tag": "p",
+        "content": "To arrange components vertically at the center of the extension container:"
+      },
+      {
+        "tag": "p",
+        "content": "To arrange components vertically at the end of the extension container:"
+      },
+      {
+        "tag": "p",
+        "content": "In the Flex component, you can use the gap prop to apply even spacing between the tiles. This prop will apply spacing equally for both row and column directions."
+      },
+      {
+        "tag": "p",
+        "content": "You can wrap child Flex components with Flex to set more specific rules for individual components. A child Flex component will not inherit props specified in the parent Flex component, so you'll need to repeat any props you've previously defined to maintain them."
+      },
+      {
+        "tag": "p",
+        "content": "When wrapping components with Flex, you can further configure individual component layout by wrapping a child of Flex in a Box component."
+      },
+      {
+        "tag": "p",
+        "content": "This component supports the following props. To review all Box prop definitions, check out the components reference guide."
+      },
+      {
+        "tag": "p",
+        "content": "Use the flex prop in a Box component to assign any extra spacing to components using either a default value (e.g. auto) or a specific number. When using a number, the components will be distributed based on the ratio of their assigned numbers."
+      },
+      {
+        "tag": "p",
+        "content": "For example, the four tiles below take up an increasing amount of space based on their flex values."
+      },
+      {
+        "tag": "p",
+        "content": "When using Box, you only need to wrap components that you want to adjust. For example, if you wrap one component in a Box with a flex value, only that one component will have its width adjusted based on the available empty space."
+      },
+      {
+        "tag": "p",
+        "content": "When setting a flex value for only one Box, you can use any number. This is because any number on its own will result in all available space being assigned to that one component."
+      },
+      {
+        "tag": "p",
+        "content": "You can also use the alignSelf prop to override alignment rules for individual Box components."
+      }
+    ]
+  }
+]
